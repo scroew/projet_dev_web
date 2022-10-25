@@ -1,0 +1,186 @@
+@import '@fontsource/fira-mono';
+
+:root {
+	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--color-bg-0: rgb(202, 216, 228);
+	--color-bg-1: hsl(209, 36%, 86%);
+	--color-bg-2: hsl(224, 44%, 95%);
+	--color-theme-1: #ff3e00;
+	--color-theme-2: #40b3ff;
+	--color-text: rgba(0, 0, 0, 0.7);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
+body {
+	background: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+	background: url(https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/4/f/1/4f13bc2d13_50170991_planete-foret-amazonie-deforestation-surface-espagne.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.container-first {
+	position: absolute;
+	top: 30%;
+	left: 5%;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 110px;
+	color: #f1f1f1;
+	font-family: Abril fatface, sans-serif;
+}
+h1 span {
+	position: relative;
+}
+.container-btns {
+	position: relative;
+	top: 50px;
+}
+.btn-first {
+	border: 2px solid #f1f1f1;
+	outline: none;
+	background: transparent;
+	font-size: 30px;
+	padding: 20px;
+	width: 300px;
+	color: #f1f1f1;
+	cursor: pointer;
+}
+.btn-first:nth-child(1) {
+	margin-right: 30px;
+}
+.btn-first:hover {
+	transition: all 0.3s ease-in-out;
+	background: #f1f1f1;
+	color: #333;
+}
+.lignes {
+	position: absolute;
+	top: 6%;
+	left: 5%;
+}
+.l1 {
+	width: 250px;
+	height: 3px;
+	background: #f1f1f1;
+	border-radius: 5px;
+}
+.l2 {
+	width: 140px;
+	height: 3px;
+	background: #f1f1f1;
+	border-radius: 5px;
+	position: relative;
+	top: 20px;
+}
+
+.logo {
+	position: absolute;
+	right: 2.9%;
+	top: 4%;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.medias {
+	list-style-type: none;
+	position: absolute;
+	right: 3.3%;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.bulle {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #f1f1f1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	background: #f1f1f1f1;
+	cursor: pointer;
+	position: relative;
+}
+
+.logo-medias {
+	width: 40px;
+	height: 40px;
+}
+
+h2,
+p {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	color: var(--color-theme-1);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--color-text);
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
